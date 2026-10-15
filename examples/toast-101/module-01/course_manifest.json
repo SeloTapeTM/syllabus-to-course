@@ -1,0 +1,70 @@
+{
+  "course": "TOAST 101 (self-study)",
+  "module": 1,
+  "title": "Module 1: The Science of Brown",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "scenes": [
+    {
+      "id": "intro",
+      "template": "title-slide",
+      "narration": "Welcome to module one of Toast one oh one, the science of brown. Put a slice of bread in the toaster for thirty seconds and it comes out warm but pale. Leave it for a few minutes and it comes out golden, nutty, and crisp. Nothing was added to it. So in this module, we'll find out what the bread did to itself.",
+      "visual": { "kicker": "Module 1", "title": "The Science of Brown", "subtitle": "Why toast turns golden, and why it waits" }
+    },
+    {
+      "id": "maillard",
+      "template": "bullet-slide",
+      "narration": "Most of that change is the Maillard reaction. Amino acids from the bread's proteins react with sugars from its starch. Each reaction makes new flavor and aroma compounds, and brown pigments too. It speeds up a lot once the surface passes about one hundred and forty degrees Celsius. Below that, the ingredients are all there, but they barely react.",
+      "visual": {
+        "kicker": "The main reaction",
+        "heading": "The Maillard reaction",
+        "bullets": [
+          { "text": "Amino acids + sugars react", "cue": "Amino acids from the bread's proteins" },
+          { "text": "Makes flavor, aroma, and color", "cue": "Each reaction makes new flavor" },
+          { "text": "Speeds up above ~140 °C", "cue": "It speeds up a lot" }
+        ]
+      }
+    },
+    {
+      "id": "drying",
+      "template": "diagram",
+      "narration": "But toast can't brown right away. Bread is roughly a third water, and water can't get hotter than one hundred degrees at normal pressure. So first, the surface has to dry out. Only then can it heat past one hundred and forty degrees, and only then does it brown. That's also why toast is crisp outside and soft inside.",
+      "visual": {
+        "kicker": "First it dries, then it browns",
+        "heading": "The order of toasting",
+        "nodes": [
+          { "text": "Wet surface, ~100 °C", "cue": "Bread is roughly a third water" },
+          { "text": "Surface dries out", "cue": "the surface has to dry out" },
+          { "text": "Heats past 140 °C", "cue": "heat past one hundred and forty" },
+          { "text": "Browning", "cue": "only then does it brown" }
+        ],
+        "caption": "Crisp outside, soft inside"
+      }
+    },
+    {
+      "id": "quiz",
+      "template": "quiz-question",
+      "narration": "Quick check. On the same toaster setting, which browns faster: plain white bread, or brioche? Pause and decide. The answer is brioche. It has more sugar, so caramelization joins the Maillard reaction and the slice darkens faster.",
+      "visual": {
+        "kicker": "Quick check",
+        "question": "Same setting: which browns faster?",
+        "options": ["Plain white bread", "Brioche", "They brown the same"],
+        "answer": 1,
+        "cue": "The answer is brioche"
+      }
+    },
+    {
+      "id": "summary",
+      "template": "summary",
+      "narration": "To sum up. Toast turns brown mostly because of the Maillard reaction. It needs a dry surface above about one hundred and forty degrees. And sugary breads brown faster, because caramelization helps. Next module, we'll pick the right bread for the job.",
+      "visual": {
+        "heading": "Key takeaways",
+        "points": [
+          { "text": "Browning is mostly Maillard", "cue": "mostly because of the Maillard reaction" },
+          { "text": "Dry surface first, then ~140 °C", "cue": "It needs a dry surface" },
+          { "text": "More sugar, faster browning", "cue": "sugary breads brown faster" }
+        ]
+      }
+    }
+  ]
+}
