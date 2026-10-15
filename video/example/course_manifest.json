@@ -1,0 +1,44 @@
+{
+  "course": "CS 201: Data Structures and Algorithms (self-study)",
+  "module": 1,
+  "title": "Module 1: Asymptotic Analysis",
+  "voice": "am_michael",
+  "speed": 1.0,
+  "scenes": [
+    {
+      "id": "intro",
+      "template": "title-slide",
+      "narration": "Welcome to module one, asymptotic analysis. Before we compare any algorithms, we need a fair way to measure them. Timing code with a stopwatch depends on your laptop, your language, and even what else is running. So instead, we count how the number of steps grows as the input gets bigger. That growth rate is what this whole module is about.",
+      "visual": {
+        "kicker": "Module 1",
+        "title": "Asymptotic Analysis",
+        "subtitle": "Measuring how running time grows with input size"
+      }
+    },
+    {
+      "id": "three-bounds",
+      "template": "bullet-slide",
+      "narration": "There are three notations you will see everywhere. Big O gives an upper bound: the algorithm grows no faster than this. Big Omega gives a lower bound: it grows at least this fast. And Big Theta means both at once, so the growth is pinned down exactly, up to a constant factor. In interviews, people often say Big O when they really mean Theta.",
+      "visual": {
+        "heading": "Three ways to bound growth",
+        "bullets": [
+          { "text": "Big O: upper bound (no faster than)", "cue": "Big O gives" },
+          { "text": "Big Ω: lower bound (at least this fast)", "cue": "Big Omega" },
+          { "text": "Big Θ: both at once, a tight bound", "cue": "Big Theta" }
+        ]
+      }
+    },
+    {
+      "id": "check",
+      "template": "quiz-question",
+      "narration": "Quick check. A function loops over a list of n items, and inside the loop it calls list dot index, which scans the whole list. What is the running time? Pause here and decide. The answer is n squared. Each call to index is linear, and we make n of them, so the costs multiply.",
+      "visual": {
+        "kicker": "Check yourself",
+        "question": "A loop over n items calls list.index(x) each time. Running time?",
+        "options": ["O(1)", "O(log n)", "O(n)", "O(n²)"],
+        "answer": 3,
+        "cue": "The answer is"
+      }
+    }
+  ]
+}

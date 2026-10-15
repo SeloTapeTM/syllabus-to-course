@@ -1,0 +1,55 @@
+/* Shared look for every module video. Edit here to restyle all modules at once. */
+:root {
+  --bg: #0f1720;
+  --panel: #17212c;
+  --ink: #eef2f6;
+  --muted: #9fb0c0;
+  --accent: #5fb3ff;
+  --good: #47c58a;
+  --line: #2a3a4a;
+  --sans: system-ui, sans-serif;
+  --mono: ui-monospace, monospace;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1920px; height: 1080px; overflow: hidden; background: var(--bg); }
+#root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: var(--sans); color: var(--ink); }
+
+/* Scenes fill the frame; content stays above the caption band (y > 880). */
+.scene { position: absolute; inset: 0; }
+.stage { position: absolute; left: 140px; right: 140px; top: 110px; height: 740px; display: flex; flex-direction: column; }
+.kicker { font-size: 26px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 18px; }
+.heading { font-size: 72px; font-weight: 700; line-height: 1.1; margin-bottom: 44px; max-width: 1600px; }
+
+/* title-slide */
+.title-wrap { justify-content: center; }
+.title { font-size: 96px; font-weight: 800; line-height: 1.05; max-width: 1500px; }
+.subtitle { font-size: 40px; color: var(--muted); margin-top: 28px; max-width: 1400px; }
+.bar { width: 220px; height: 8px; background: var(--accent); margin-top: 44px; transform-origin: left center; }
+
+/* bullet-slide and summary */
+.list { list-style: none; display: flex; flex-direction: column; gap: 36px; }
+.list li { font-size: 52px; line-height: 1.3; padding-left: 60px; position: relative; max-width: 1560px; opacity: 0; }
+.list li::before { content: ""; position: absolute; left: 0; top: 26px; width: 22px; height: 22px; border-radius: 4px; background: var(--accent); }
+.summary .list li::before { background: var(--good); }
+
+/* diagram */
+.flow { display: flex; align-items: center; justify-content: center; gap: 0; flex: 1; }
+.node { background: var(--panel); border: 3px solid var(--accent); border-radius: 18px; padding: 28px 30px; font-size: 36px; text-align: center; width: 290px; opacity: 0; }
+.arrow { width: 70px; height: 6px; background: var(--muted); transform-origin: left center; position: relative; }
+.arrow::after { content: ""; position: absolute; right: -4px; top: -9px; border-left: 18px solid var(--muted); border-top: 12px solid transparent; border-bottom: 12px solid transparent; }
+.diagram-caption { font-size: 34px; color: var(--muted); text-align: center; margin-top: 30px; opacity: 0; }
+
+/* code */
+.code { background: #0a1016; border: 2px solid var(--line); border-radius: 16px; padding: 34px 40px; font-family: var(--mono); font-size: 34px; line-height: 1.5; }
+.code .ln { display: block; white-space: pre; opacity: 0; border-radius: 6px; padding: 0 10px; }
+.code .lang { font-family: var(--sans); font-size: 22px; color: var(--muted); margin-bottom: 14px; letter-spacing: 0.1em; text-transform: uppercase; }
+
+/* quiz-question */
+.question { font-size: 52px; font-weight: 700; line-height: 1.2; margin-bottom: 40px; max-width: 1600px; }
+.options { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+.option { background: var(--panel); border: 3px solid var(--line); border-radius: 16px; padding: 30px 34px; font-size: 44px; opacity: 0; }
+.option b { color: var(--accent); margin-right: 16px; }
+
+/* captions */
+.cap { position: absolute; left: 0; right: 0; top: 905px; height: 110px; display: flex; align-items: center; justify-content: center; }
+.cap span { max-width: 1600px; text-align: center; font-size: 40px; line-height: 1.25; font-weight: 600; color: #fff; background: rgba(0, 0, 0, 0.62); padding: 10px 26px; border-radius: 12px; opacity: 0; }
