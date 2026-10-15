@@ -71,8 +71,9 @@ Claude works in four phases and checks in with you between each:
 | 🗺️ Phase 2 course map | [`course-map.md`](examples/toast-101/course-map.md) |
 | 📘 A full module | [`Module-01-Science-of-Brown.md`](examples/toast-101/Module-01-Science-of-Brown.md) |
 | 🎬 Its video manifest | [`course_manifest.json`](examples/toast-101/module-01/course_manifest.json) |
+| ▶️ The rendered video | [`module.mp4`](examples/toast-101/module-01/module.mp4?raw=true) (1:45, 5 MB) |
 
-**Frames from its video lecture** (105 s, 5 scenes, word-timed captions):
+**Frames from its video lecture** (5 scenes, word-timed captions) · **[▶️ Watch the full MP4](examples/toast-101/module-01/module.mp4?raw=true)**:
 
 <p>
   <img src="assets/toast-title.jpg" width="49%" alt="Title slide: The Science of Brown">
